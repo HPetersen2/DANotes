@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "danotes-14281": {
+      "hosting": {
+        "da-notes": [
+          "danotes-14281"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "danotes-14281"
+  }
+}

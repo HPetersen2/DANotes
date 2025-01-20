@@ -94,6 +94,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "da-notes:build:production",
+              "serveTarget": "da-notes:serve:production"
+            },
+            "development": {
+              "buildTarget": "da-notes:build:development",
+              "serveTarget": "da-notes:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
