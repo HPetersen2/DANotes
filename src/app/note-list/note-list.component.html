@@ -135,7 +135,11 @@
     </div>
     <div>
 
-        <app-note *ngFor="let note of getTrash()" [note]="note"></app-note>
-        <app-note *ngFor="let note of getList()" [note]="note"></app-note>
+        @if(status == "trash") {
+            <app-note *ngFor="let note of getTrash()" [note]="note"></app-note>
+        } @else if(status == "notes") {
+            <app-note *ngFor="let note of getList()" [note]="note"></app-note>
+        }
+
     </div>
 </div>
